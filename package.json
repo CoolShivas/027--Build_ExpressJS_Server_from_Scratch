@@ -2,6 +2,7 @@
   "name": "027--build_expressjs_server_from_scratch",
   "version": "1.0.0",
   "main": "theoryExp.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
