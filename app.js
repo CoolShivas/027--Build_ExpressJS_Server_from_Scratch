@@ -18,6 +18,7 @@ const app = express();
 
 const PORT = 1915;
 
+// // // Formation of Home Page;
 app.get("/", (request, response) => {
     // response.send("Hello World");
     // // // In browser open the Network tab;
@@ -70,6 +71,32 @@ app.get("/", (request, response) => {
 });
 
 
+// // // Formation of About Page;
+app.get("/about", (req, res) => {
+    res.send("Welcome to the About page.");
+    // // // In browser open the Network tab;
+    // // // You are able to see the following things now;
+    // // // localhost with status of 304;
+    // // // Click on that you will move enter; 
+    /**
+     * * General 
+     *  Request URL:        http://localhost:1915/about
+        Request Method:     GET
+        Status Code:        304 Not Modified
+        Remote Address:     [::1]:1915
+        Referrer Policy:    strict-origin-when-cross-origin
+
+     * * Response Headers 
+     *  connection:         keep-alive
+        date:               Fri, 09 May 2025 08:59:25 GMT
+        etag:               W/"1a-OMYp/OEdHQkpKd5AXxD77CTRUZ
+        keep-alive:         timeout=5
+        x-powered-by:       Express
+     
+     * 
+     */
+});
+
 app.listen(PORT, () => {
     console.log(`Server running at ${PORT}`);
 });
@@ -80,3 +107,5 @@ app.listen(PORT, () => {
 // // // Finally, your server started :- Server running at 1915;
 // // // Now, open the browser and in url write localhost:1915
 // // // You will get the result on the display on BOLD LETTERS as :- Hello World
+// // // Now, open the browser and in url write localhost:1915/about
+// // // You will get the result on the display as :- Welcome to the About page.
