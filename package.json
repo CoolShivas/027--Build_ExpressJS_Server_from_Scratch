@@ -1,0 +1,19 @@
+{
+  "name": "027--build_expressjs_server_from_scratch",
+  "version": "1.0.0",
+  "main": "theoryExp.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CoolShivas/027--Build_ExpressJS_Server_from_Scratch.git"
+  },
+  "author": "Shiva Chouhan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CoolShivas/027--Build_ExpressJS_Server_from_Scratch/issues"
+  },
+  "homepage": "https://github.com/CoolShivas/027--Build_ExpressJS_Server_from_Scratch#readme",
+  "description": ""
+}
