@@ -20,6 +20,27 @@ const PORT = 1915;
 
 app.get("/", (request, response) => {
     response.send("Hello World");
+    // // In browser open the Network tab;
+    // // You are able to see the following things now;
+    // // localhost with status of 304;
+    // // Click on that you will move enter; 
+    /**
+     * * General 
+     *  Request URL:        http://localhost:1915/
+        Request Method:     GET
+        Status Code:        304 Not Modified
+        Remote Address:     [::1]:1915
+        Referrer Policy:    strict-origin-when-cross-origin
+
+     * * Response Headers 
+     *  connection:         keep-alive
+        date:               Fri, 09 May 2025 08:38:34 GMT
+        etag:               W/"b-Ck1VqNd45QIvq3AZd8XYQLvEhtA"
+        keep-alive:         timeout=5
+        x-powered-by:       Express
+     
+     * 
+     */
 });
 
 
