@@ -97,6 +97,49 @@ app.get("/about", (req, res) => {
      */
 });
 
+
+// // // Formation of Contact Page;
+app.get("/contact", (req, res) => {
+    return res.send(`<div class="container">
+        <h1>URL Shortener</h1>
+        <form id="shorten-form">
+            <div>
+                <label for="url">Enter URL :-</label>
+                <input type="url" name="url" id="url" required>
+            </div>
+            <div>
+                <label for="shortCode">Enter ShortCode :-</label>
+                <input type="text" name="shortCode" id="shortCode" required>
+            </div>
+            <button type="submit">Shorten</button>
+        </form>
+        <h2>Shortened URLs</h2>
+        <ul id="shortened-urls"></ul>
+    </div>`);
+    // // // In browser open the Network tab;
+    // // // You are able to see the following things now;
+    // // // localhost with status of 304;
+    // // // Click on that you will move enter; 
+    /**
+     * * General 
+     *  Request URL:        http://localhost:1915/contact
+        Request Method:     GET
+        Status Code:        304 Not Modified
+        Remote Address:     [::1]:1915
+        Referrer Policy:    strict-origin-when-cross-origin
+
+     * * Response Headers 
+     *  connection:         keep-alive
+        date:               Fri, 09 May 2025 09:08:32 GMT
+        etag:               W/"23a-dDwad+QdMpaLYICq07CDAHUzEEE
+        keep-alive:         timeout=5
+        x-powered-by:       Express
+     
+     * 
+     */
+});
+
+
 app.listen(PORT, () => {
     console.log(`Server running at ${PORT}`);
 });
@@ -109,3 +152,5 @@ app.listen(PORT, () => {
 // // // You will get the result on the display on BOLD LETTERS as :- Hello World
 // // // Now, open the browser and in url write localhost:1915/about
 // // // You will get the result on the display as :- Welcome to the About page.
+// // // Now, open the browser and in url write localhost:1915/contact
+// // // You will get the result on the display as :- Structured form of URL Shortener;
